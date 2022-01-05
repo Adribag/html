@@ -1,21 +1,52 @@
 body{
-    padding: 1rem;
-    background-color: rgb(88, 88, 88);
+    margin: 0;
+    background-color: #001219;
     font-family: Arial, Helvetica, sans-serif;
     display : flex;
     flex-wrap: wrap;
+}
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+    top:0;
+    z-index: 4;
+    border: 3px solid #001219
+}
+nav ul{
+    background-color: #6c757d;
+    /* position: fixed; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    opacity: 0.5;
+    
+}
+nav ul li{
+    margin: 1rem;
+    
+}
+nav ul li a{
+    color: floralwhite;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: floralwhite;
+    text-decoration: none;
+	text-shadow: 0px 4px 7px floralwhite;
+}
+nav ul li:last-child:active{
+    color: fuchsia;
 }
 header{
     display : flex;
     justify-content: space-between;
     padding: 1rem;
-    background-color: darkgrey;
-    margin: 10px;
-    border-radius: 20px;
+    background-color: #005f73;
     width: 100%;
 }
 address{
-    background-color: dimgrey;
+    background-color: #6c757d;
     padding: 20px;
     color: gainsboro;
     border-radius: 20px;
@@ -27,14 +58,13 @@ h1{
     display : flex;
     justify-content: space-between;
     padding: 1rem;
-    background-color: darkgrey;
-    margin: 10px;
-    border-radius: 20px;
+    background-color: #6c757d;
     width: 100%;
 }
 ul{
     list-style-type: none;
     padding: 0;
+    position:relative;
 }
 li{
     text-align: center;
@@ -52,12 +82,45 @@ li{
     padding: 20px;
     border-radius: 20px;
     min-height: 150px;
+    z-index: 2;  
+}
+.formations li:last-child{
+    margin: 0 auto;
+}
+
+.formations li:hover{
+    opacity: 0;
+    transition: 1s;
+}     
+.formationDos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;   
+    position:absolute;
+    top:59px;
+}
+.formationDos li{
+    width: 25%;
+    background-color: #001219;
+    margin: 20px;
+    padding: 20px;
+    color:floralwhite;
+    border-radius: 20px;
+    min-height: 150px;
+    line-height: 150px;
+}
+.formationDos li:last-child{
+    margin: 0 auto;
+}
+.formations li:hover .formationDos li{
+    opacity: 1;
+    transition: 1s;
 }
 .competences{
     display : flex;
     justify-content: space-between;
     padding: 1rem;
-    background-color: darkgrey;
+    background-color: #6c757d;
     margin: 10px;
 }
 .competences li{
@@ -71,4 +134,6 @@ li{
     background-color: gainsboro;
     border-radius: 20px;
     padding: 1rem;
+    margin-top: 1rem;
 }
+

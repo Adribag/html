@@ -4,15 +4,24 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>CV</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <nav class="sticky">
+            <ul>
+                <li><a href="#adresse">Adresse</a></li>
+                <li><a href="#exp">E&F</a></li>
+                <li><a href="#comp">Compétences</a></li>
+                <li><a href="#rea">Réalisations</a></li>
+                <li><a href="#div">Divers</a></li>
+            </ul>
+        </nav>      
         <header>
-            
-            <address>
+               
+            <address id="adresse">
                 Adrien Baglin <br>
                 5 rue du square <br>
                 61400 Messei <br>
@@ -26,20 +35,29 @@
             </section>
         </header>
         <section class="corps">
-            <ul>
+            <ul id="exp">
                 <li><h3>Expériences & Formations</h3></li>
                 <ul class="formations">
                     <li>2021-2022 : Formation développeur Web et Web Mobile Python</li>
                     <li>2018-2019 : Formation Chef de projet Web</li>
                     <li>2017 : Formateur Photoshop & Wordpress</li>
-                    <li>2015-2016 : Foirmatiuon</li>
+                    <li>2015-2016 : Formation Intégrateur Web</li>
                     <li>2014 : Infographiste Maquettiste</li>
                     <li>2011-2013 : Bac +2 Concepteur de médias interacti</li>
-                    <li>2008-2010 : Bac Pro infortmatique et réseau</li>
+                    <li>2008-2010 : Bac Pro informatique et réseau</li>
+                </ul>
+                <ul class="formationDos">
+                    <li>Python, Django, Web, Web Mobile</li>
+                    <li>Création site web Wordpress</li>
+                    <li>Bases sur Photoshop & Wordpress</li>
+                    <li>HTML, CSS , Responsiv Design</li>
+                    <li>Maquettes & Logos</li>
+                    <li>Suite Adobe & Dev Web</li>
+                    <li>Dépannage Software & Hardware</li>
                 </ul>
 
-                <li><h3>Compétences</h3></li>
-                <ul class="competences">
+                <li id="comp"><h3>Compétences</h3></li>
+                <ul class="competences" >
                     <li>
                         <h4>WEB</h4>
                         <ul class="web">
@@ -59,35 +77,35 @@
                             <li>Affinity Designer</li>
                         </ul>
                     </li>
-                    <li>
-                        <h4>Réalisation</h4>
-                        <ul>
-                            <li>Logo</li>
-                            <li>Affiche</li>
-                            <li>Carte de visite</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h4>Autres</h4>
-                        <ul>
-                            <li>Dépannage Informatique</li>
-                            <li>Conseils clients</li>
-                        </ul>
-                    </li>
-                </ul>
+                <li>
+                    <h4>Réalisation</h4>
+                    <ul>
+                        <li>Logo</li>
+                        <li>Affiche</li>
+                        <li>Carte de visite</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Autres</h4>
+                    <ul>
+                        <li>Dépannage Informatique</li>
+                        <li>Conseils clients</li>
+                    </ul>
+                </li>
+            </ul>
 
-                <li class="projet">
+                <li class="projet" id="rea">
                     <h3>Projets et Réalisations</h3>
                     <p>Installation dépannage et formation Hardware & Software</p>
                     <p>Création logo & Carte de visite</p>
                 </li>
 
-                <li>
+                <li class="projet" id="div">
                     <h3>Centres d'intérêts</h3>
                     <ul>
                         <li>Sport - Badminton & Basketball</li>
                         <li>Photographie</li>
-                        <li>Informatique et Multimédia</li>
+                        <li>Informatique & Multimédia</li>
                     </ul>
                 </li>
                 
